@@ -1,0 +1,10 @@
+name: Github Actions Demo
+on: [push]
+jobs: 
+  Explore-Github-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo " Bulid succesfull "
+      - run: echo "testing phase"
+      - run: echo " ${{ github.repository }} has been succesfully tested "
+      - run: echo "This job's status is ${{ job.status }}"
